@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomerSurveyForm</title>
+    <style>
+        body{
+            background-color: rgb(0, 183, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            font-size: 45px;
+            font-family:Arial, Helvetica, sans-serif;
+            display: block;
+            margin-bottom: 0px;
+        }
+        form{
+            margin-top: 0px;
+            background-color: white;
+            padding: 30px;
+            width:550px;
+            height: 65vh;
+        }
+        .entry{
+            height: 30px;
+            width: 250px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        .check_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 50px;
+            margin-top:20px;
+        }
+        #comment{
+            width: 450px;
+        }
+        form .submit{
+            width: 120px;
+            padding: 7px;
+            border-radius: 4px;
+            outline: none;
+            border:none;
+            background-color: rgb(0, 183, 255);
+            margin-top:5px;
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        form .submit:hover{
+            background-color: rgb(44, 46, 47);
+            color: rgb(19, 206, 190);
+            transition: color 1s;
+            transition: background-color 1s;
+            cursor: pointer;
+        }
+        footer{
+            margin-top:30px;
+            font-size: 18px;
+            color: hsl(0, 0%, 87%);
+        }
+        footer span{
+            color: hsl(0, 0%, 16%);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Customer Survey Form</h1><br>
+    <form action="submit.php" method="POST">
+        <label for="name">Name</label>
+        <label for="email" style="margin-left:230px">Email</label><br>
+        <input type="text" id="name" class="entry">
+        <input type="text" id="email" class="entry"><br>
+
+        <div class="check_box">
+            <div>
+                <label class="question">Is this first time You are our product & service?</label><br>
+            </div>
+            <div>
+                <input type="radio" id="Yes" name="check_box" value="Yes">
+                <label  for="Yes">Yes</label>
+                <input type="radio" id="No" name="check_box" value="No">
+                <label  for="Yes">No</label>
+            </div>
+        </div>
+        <div class="check_box">
+            <div>
+                <label >Would you suggestion to your friends and colleague?</label><br>
+            </div>
+            <div>
+                <input type="radio" id="Yes" name="check_box" value="Yes">
+                <label  for="Yes">Yes</label>
+                <input type="radio" id="No" name="check_box" value="No">
+                <label  for="Yes">No</label>
+            </div>
+        </div>
+        <div class="check_box">
+            <div>
+                <label>How satisfied are you with our company overall?</label><br>
+            </div>
+            <div>
+                <input type="radio" id="satisfied" name="check_box" value="satisfied">
+                <label  for="satisfied">satisfied</label>
+                <input type="radio" id="Undecided" name="check_box" value="Undecided">
+                <label  for="Undecided">Undecided</label>
+                <input type="radio" id="Unsatisfied" name="check_box" value="Unsatisfied">
+                <label  for="Unsatisfied">Unsatisfied</label>
+            </div>
+        </div><br>
+        <label>Do you have suggestion to imporve our service?</label><br><br>
+        <textarea id="comment" rows="6",cols="40"></textarea><br><br>
+        <input class="submit" type="submit">
+    </form>
+    <footer>
+        @2018 Customer Survey Form. All Rights Reserved ! Design By <span>W3Layouts</span>
+    </footer>
+</body>
+</html>
