@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caluculator</title>
+    <style>
+        body{
+            background-color: hsl(0, 0%, 69%);
+            display: flex;
+            justify-content: center;
+        }
+        .cal{
+            margin:150px;
+            width: 300px;
+            height: 360px;
+            background-color: black;
+        }
+        .header{
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .left-header{
+            background-color: white;
+            font-size: 180x;
+            padding-left:40px;
+            flex:1;
+            padding-top: 14px;
+            font-size: 22px;
+            color: rgb(0, 0, 0);
+        }
+        .right-header{
+            width: auto;
+            min-width: 80px;
+            background-color: hsla(175, 100%, 50%, 0.689);
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            padding-top:15px;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            row-gap: 0px;
+            column-gap: 0px;
+        }
+        .box{
+            height: 75px;
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 19px;
+        }
+        .box1{
+            background-color: hsl(0, 0%, 44%);
+            height: 75px;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 19px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="cal">
+        <div class="header">
+            <div class="left-header">56+2</div>
+            <div class="right-header">AC</div>
+        </div>
+        <div class="main">
+            <div class="box">9</div>
+            <div class="box">8</div>
+            <div class="box">7</div>
+            <div class="box1">+</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box1">-</div>
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box1">/</div>
+            <div class="box">.</div>
+            <div class="box">0</div>
+            <div class="box">=</div>
+            <div class="box1">x</div>
+        </div>
+    </div>
+</body>
+</html>
